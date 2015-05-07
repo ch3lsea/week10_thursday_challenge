@@ -3,7 +3,8 @@ var app = express();
 var path = require('path');
 var favicon = require('serve-favicon');
 
-app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+//app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 app.set('port', (process.env.PORT || 5000));
 
