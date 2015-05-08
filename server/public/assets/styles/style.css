@@ -1,3 +1,29 @@
 body {
-    background-color: beige;
+    background-color: #ebdbc6;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #536EA6;
+    color: #fff;
+}
+
+.nav-tabs>li>a {
+    background-color: #536EA6;
+    color: #fff;
+}
+
+.nav-tabs>li>a:hover {
+    color: #fff;
+    background-color: #2C3540;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #fff;
+    background-color: #2C3540;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    background-color: #536EA6;
+    color: #fff;
 }
