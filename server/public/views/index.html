@@ -1,10 +1,31 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <link rel="stylesheet" href="/assets/styles/stylesheet.css">
-            <script type="text/javascript" src="/assets/scripts/app.js"></script>
+            <link rel="stylesheet" href="../assets/styles/style.css">
+            <script type="text/javascript" src="../assets/scripts/app.min.js"></script>
         </head>
         <body>
-            <div>Hello, World!</div>
+            <div class="container">
+                <div class="jumbotron">
+                    <h2>Portfolio</h2>
+                    <h4>This is a website designed to showcase some of the work I've done</h4>
+                </div>
+            </div>
+            <div class="container">
+                <div role="tabpanel">
+                    <ul class="nav nav-tabs" role="tablist" id="tabz">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                        <li role="presentation"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Tab 1</a></li>
+                        <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Tab 2</a></li>
+                        <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Tab 3</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">Home Page</div>
+                        <div role="tabpanel" class="tab-pane" id="tab1">Content for tab 1</div>
+                        <div role="tabpanel" class="tab-pane" id="tab2">Content for tab 2</div>
+                        <div role="tabpanel" class="tab-pane" id="tab3">Content for tab 3</div>
+                    </div>
+                </div>
+            </div>
         </body>
     </html>
