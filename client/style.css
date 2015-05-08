@@ -1,5 +1,6 @@
 body {
-    background-color: #ebdbc6;
+    background-color: #333333;
+    color: #fff;
 }
 
 .nav-tabs {
@@ -9,21 +10,57 @@ body {
 
 .nav-tabs>li>a {
     background-color: #536EA6;
+    border: 1px solid #2c3c5a;
     color: #fff;
 }
 
 .nav-tabs>li>a:hover {
     color: #fff;
-    background-color: #2C3540;
+    background-color: #405580;
+    border: 1px solid #526da3;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #fff;
-    background-color: #2C3540;
+    background-color: #405580;
+    border: 1px solid #2c3c5a;
 }
 
 .jumbotron {
     margin-top: 20px;
     background-color: #536EA6;
     color: #fff;
+    overflow: auto;
 }
+
+.left {
+    float: left;
+    width: 600px;
+}
+
+.right {
+    display: block;
+    float: right;
+}
+
+.right a {
+    color: #fff;
+}
+
+.exp, .skills {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.expRow {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.col4 {
+    padding: 5px;
+}
+
+.skillRows {
+    margin-bottom: 20px;
+}
+
