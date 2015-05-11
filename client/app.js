@@ -1,9 +1,31 @@
 var scroll = require('./marquee');
 var fruit = require('./fruitStand');
 
-$.ajax(../../server/modules/fruitStand) {
+$.ajax({
+    url: '../server/modules/marquee',
+    success: function(){
+        response.send(scroll());
+        console.log("ajax success for scroll");
+    },
+    error: function(){
+        console.log("failure in ajax call for scroll");
+    }
+});
 
-}
+$.ajax({
+    url: '../server/modules/fruitStand',
+    success: function(){
+        response.send(fruit.startMarket());
+        response.send(fruit.updateAll());
+        response.send(fruit.playerInventory());
+        response.send(fruit.Fruit());
+        response.send(fruit.randomNumber());
+        console.log("ajax success for fruitStand");
+    },
+    error: function(){
+        console.log("failure in ajax call for fruitStand");
+    }
+});
 
 $(document).ready(function() {
     $('#tabz a[href="#home"]').click(function (e) {
